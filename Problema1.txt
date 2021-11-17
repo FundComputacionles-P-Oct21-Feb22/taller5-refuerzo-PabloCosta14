@@ -1,0 +1,57 @@
+Problema 1
+En un restaurante de la ciudad de Loja, se hace un descuento del 5% si el cliente tiene una edad mayor a cero y menor o igual a 20, del 10% si el cliente 
+tiene una edad mayor a 20 y menor o igual 30 años, del 15% si la edad es mayor 30 años. Elaborar un solución que pida 
+como datos de entrada la edad y el valor del plato (un cliente solo pide un plato) y luego calcule e imprima el subtotal por pagar y el total por pagar.
+
+//Miniespeficificacion 
+1.Inicio 
+
+2.edad i[0,n]
+3.valorDePlato d[0,n]
+
+4.porcentaje1 d[0,n] <-- 5
+5.porcentaje2 d[0,n] <-- 10
+6.porcentaje3 d[0,n] <-- 15
+
+7.descuento1  d[0,n]
+8.descuento2  d[0,n]
+9.descuento3  d[0,n]
+  
+
+10.subtotal d[0,n]
+
+11.totalPagar d [0,n]
+
+
+
+12.   Escribir "Ingrese el valor del plato"
+13.    Lea  valorDePlato
+14.   Escribir "Ingrese su edad"
+15.    Lea  edad
+
+16 .subtotal <--  valorDePlato
+
+
+17. Si edad >0 && <=20
+18.descuento1 <-- valorDePlato * porcentaje1 / 100
+19.totalPagar <-- valorDePlato - descuento1
+
+20.Por el contrario
+21.Si edad >20 && <=30
+22.descuento2 <-- valorDePlato * porcentaje2 / 100
+23.totalPagar <-- valorDePlato - descuento2
+
+24.Por el contrario
+25.Edad > 30
+26.descuento3 <-- valorDePlato * porcentaje3 / 100
+27.totalPagar <-- valorDePlato - descuento3
+
+28.Fin si
+29.Fin si
+
+
+30.Escribir "El Subtotal por pagar es" + subtotal
+31.Escribir "El valor total por pagar es" + totalPagar
+
+32. Fin
+
